@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The JavaScript string() Methods</h1>
+    <p id="number_result"></p>
+    <p id="search_result"></p>
+    <p id="replace_result"></p>
+    <p id="string_result"></p>
+    <script>
+        var str = "hello world"
+        document.getElementById("search_result").innerHTML = str.search("world")
+        document.getElementById("replace_result").innerHTML = str.replace("world", "universe")
+        var x = 38
+        var y = 76
+        document.getElementById("number_result").innerHTML = x + y
+        document.getElementById("string_result").innerHTML = String(x) + String(y)
+    </script>
+</body>
+
+</html>
